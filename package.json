@@ -1,5 +1,5 @@
 {
-  "name": "react-es6-template",
+  "name": "react-highlightjs",
   "version": "0.0.0",
   "description": "a template for react es6 components. Contains webpack configuration and document generator.",
   "main": "dist/index.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/episodeyang/react-es6-template.git"
+    "url": "git+https://github.com/episodeyang/react-highlightjs.git"
   },
   "keywords": [
     "react",
@@ -35,9 +35,9 @@
   "author": "Ge Yang <yangge1987@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/episodeyang/react-es6-template/issues"
+    "url": "https://github.com/episodeyang/react-highlightjs/issues"
   },
-  "homepage": "https://github.com/episodeyang/react-es6-template#readme",
+  "homepage": "https://github.com/episodeyang/react-highlightjs#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-cli": "6.x",
@@ -84,5 +84,8 @@
     "tape": "4.x",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "highlight.js": "^9.4.0"
   }
 }

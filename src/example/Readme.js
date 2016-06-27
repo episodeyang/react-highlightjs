@@ -4,25 +4,25 @@
 import React from "react";
 import Markdown from "react-markdownit";
 
-import Highlight from "react-highlight";
+import Highlight from "../";
 import PropsTable from "react-component-props-table";
 
-import HappySandwichMakerExample from "../HappySandwichMaker.example";
-import HappySandwichMakerSource from "!!raw!../HappySandwichMaker.example";
-import HappySandwichMakerAST from "!!react-docgen!../HappySandwichMaker";
+import HighlightExample from "../Highlight.example";
+import HighlightSource from "!!raw!../Highlight.example";
+import HighlightAST from "!!react-docgen!../Highlight";
 
 export default function Readme({}) {
   return (
     <Markdown stripIndent={true}>{`
       # React ES6 Component Template
 
-      [![github](https://img.shields.io/github/downloads/episodeyang/react-es6-template/total.svg?style=flat-square&maxAge=2592000)]()
+      [![github](https://img.shields.io/github/downloads/episodeyang/react-highlightjs/total.svg?style=flat-square&maxAge=2592000)]()
 
       A template repo for react components written with es6 syntax.
       ## Usage
 
       ~~~shell
-      git clone https://github.com/episodeyang/react-es6-template
+      git clone https://github.com/episodeyang/react-highlightjs
       ~~~
 
       After cloning from gitHub, you can run the example by doing
@@ -41,20 +41,20 @@ export default function Readme({}) {
       2. a table of the component's props that is generated automatically
       3. **source** of the example component
 
-      ## Example Component: \`HappySandwichMaker\`
+      ## Example Component: \`Highlight\`
       This component makes you a delicious Subway sandwich.
       `}
-      <HappySandwichMakerExample/>
+      <HighlightExample/>
       ### Props
       {`This table below is generated automatically`}
       <div className="table-container horizontal-scroll flex-column center">
-        <PropsTable propMetaData={HappySandwichMakerAST.props}/>
+        <PropsTable propMetaData={HighlightAST.props}/>
       </div>
       {`
       ### Usage Example
 
       The source code below of the example above is loaded using the webpack raw loader.`}
-      <Highlight>{HappySandwichMakerSource}</Highlight>
+      <Highlight>{HighlightSource}</Highlight>
     </Markdown>
   )
 }

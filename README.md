@@ -1,2 +1,2 @@
-# react-es6-template
-a minimal react es6 template with automatic document generation
+# react-highlightjs
+a isomorphic highlight component using highlightjs
